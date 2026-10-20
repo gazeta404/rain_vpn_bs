@@ -188,62 +188,34 @@
       "settings": {
         "vnext": [
           {
-            "address": "se3.h1cloud.net",
-            "port": 25119,
+            "address": "31.59.210.37",
+            "port": 443,
             "users": [
               {
-                "id": "f90b7d43-69e2-4b46-a672-8029bc6796a2",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "5413edfb-08d6-4fba-b51c-809c04feb127",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
+        "network": "grpc",
+        "grpcSettings": {
+          "serviceName": "astracat"
+        },
         "security": "reality",
         "realitySettings": {
-          "serverName": "www.samsung.com",
-          "fingerprint": "qq",
-          "publicKey": "szPq4a3cvxfBOmGyg-UJCV3d1Jqjnj7YR3gaxyYtnk4",
-          "shortId": "10f517",
+          "serverName": "www.yandex.ru",
+          "fingerprint": "edge",
+          "publicKey": "5k0dtOSzmshCubdYeKppsUdHU4i2ghaB9uSJSzGjHW4",
+          "shortId": "6dbf4931096f9890",
           "spiderX": ""
         }
       }
     },
     {
       "tag": "proxy-2",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "se3.h1cloud.net",
-            "port": 25119,
-            "users": [
-              {
-                "id": "f90b7d43-69e2-4b46-a672-8029bc6796a2",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.samsung.com",
-          "fingerprint": "chrome",
-          "publicKey": "szPq4a3cvxfBOmGyg-UJCV3d1Jqjnj7YR3gaxyYtnk4",
-          "shortId": "10f517",
-          "spiderX": ""
-        }
-      }
-    },
-    {
-      "tag": "proxy-3",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -275,33 +247,61 @@
       }
     },
     {
-      "tag": "proxy-4",
+      "tag": "proxy-3",
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "31.59.210.37",
-            "port": 443,
+            "address": "se3.h1cloud.net",
+            "port": 25119,
             "users": [
               {
-                "id": "5413edfb-08d6-4fba-b51c-809c04feb127",
-                "encryption": "none"
+                "id": "f90b7d43-69e2-4b46-a672-8029bc6796a2",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "serviceName": "astracat"
-        },
+        "network": "tcp",
         "security": "reality",
         "realitySettings": {
-          "serverName": "www.yandex.ru",
-          "fingerprint": "edge",
-          "publicKey": "5k0dtOSzmshCubdYeKppsUdHU4i2ghaB9uSJSzGjHW4",
-          "shortId": "6dbf4931096f9890",
+          "serverName": "www.samsung.com",
+          "fingerprint": "qq",
+          "publicKey": "szPq4a3cvxfBOmGyg-UJCV3d1Jqjnj7YR3gaxyYtnk4",
+          "shortId": "10f517",
+          "spiderX": ""
+        }
+      }
+    },
+    {
+      "tag": "proxy-4",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "se3.h1cloud.net",
+            "port": 25119,
+            "users": [
+              {
+                "id": "f90b7d43-69e2-4b46-a672-8029bc6796a2",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.samsung.com",
+          "fingerprint": "chrome",
+          "publicKey": "szPq4a3cvxfBOmGyg-UJCV3d1Jqjnj7YR3gaxyYtnk4",
+          "shortId": "10f517",
           "spiderX": ""
         }
       }
@@ -391,198 +391,6 @@
           "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
           "shortId": "db04ce8bdb8900f1",
           "spiderX": ""
-        }
-      }
-    },
-    {
-      "tag": "proxy-8",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "91.215.43.248",
-            "port": 443,
-            "users": [
-              {
-                "id": "a5893c8b-28a2-4947-9a1c-708db25506c3",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae",
-          "headers": {
-            "Host": "my.kempekl.online"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "my.kempekl.online",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "proxy-9",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "185.86.145.183",
-            "port": 443,
-            "users": [
-              {
-                "id": "5d1f603d-34dc-4a38-9d4e-9d55bea241db",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/nl7ws",
-          "headers": {
-            "Host": "begemotov.cc"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "begemotov.cc",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "proxy-10",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "us5.h1cloud.net",
-            "port": 25177,
-            "users": [
-              {
-                "id": "95003356-20f9-4c84-a21f-2f9c1fc285eb",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "serviceName": ""
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.icloud.com",
-          "fingerprint": "edge",
-          "publicKey": "Fx-24jm_CeI_bLPdVD_5vq-mxRuyWGmqqvQTs8fnFlk",
-          "shortId": "5941fdd509782e74",
-          "spiderX": ""
-        }
-      }
-    },
-    {
-      "tag": "proxy-11",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "31.59.210.24",
-            "port": 2087,
-            "users": [
-              {
-                "id": "5413edfb-08d6-4fba-b51c-809c04feb127",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "serviceName": "astracat"
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.yandex.ru",
-          "fingerprint": "ios",
-          "publicKey": "W2OLbQ682PLJ9yHQ21Q0nPJk9U8RuL5YnlP-U1fdQzI",
-          "shortId": "a11023050f134216",
-          "spiderX": ""
-        }
-      }
-    },
-    {
-      "tag": "proxy-12",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "45.9.13.99",
-            "port": 443,
-            "users": [
-              {
-                "id": "489f1717-d3c7-4940-ad68-bdbdbab857f4",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "t.me/TEAMNETGRATISCOL",
-          "headers": {
-            "Host": "x.m-90.xyz"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "x.m-90.xyz",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "proxy-13",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "95.129.236.124",
-            "port": 443,
-            "users": [
-              {
-                "id": "a5893c8b-28a2-4947-9a1c-708db25506c3",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/gateway/v1/ws/7b24d0b5be48f08bc93aea0617ae9d57",
-          "headers": {
-            "Host": "console.game-booster.sowt.app"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "console.game-booster.sowt.app",
-          "allowInsecure": false
         }
       }
     },
