@@ -184,34 +184,98 @@
   "outbounds": [
     {
       "tag": "proxy",
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "nl-2a972c8052.shamanapp.online",
-            "port": 33736,
+            "address": "se3.h1cloud.net",
+            "port": 25119,
             "users": [
               {
-                "id": "1281acca-f21d-475c-bf04-eccbee7f8df2",
-                "alterId": 0,
-                "security": "auto"
+                "id": "f90b7d43-69e2-4b46-a672-8029bc6796a2",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/vmess-ws",
-          "headers": {
-            "Host": "nl-2a972c8052.shamanapp.online"
-          }
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.samsung.com",
+          "fingerprint": "qq",
+          "publicKey": "szPq4a3cvxfBOmGyg-UJCV3d1Jqjnj7YR3gaxyYtnk4",
+          "shortId": "10f517",
+          "spiderX": ""
         }
       }
     },
     {
       "tag": "proxy-2",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "se3.h1cloud.net",
+            "port": 25119,
+            "users": [
+              {
+                "id": "f90b7d43-69e2-4b46-a672-8029bc6796a2",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.samsung.com",
+          "fingerprint": "chrome",
+          "publicKey": "szPq4a3cvxfBOmGyg-UJCV3d1Jqjnj7YR3gaxyYtnk4",
+          "shortId": "10f517",
+          "spiderX": ""
+        }
+      }
+    },
+    {
+      "tag": "proxy-3",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "fi-p1.h1cloud.net",
+            "port": 25481,
+            "users": [
+              {
+                "id": "68c3d665-b2b5-4ffb-9f37-9f3d8c47324d",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "grpcSettings": {
+          "serviceName": "8cb5baa18cd7"
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.bing.com",
+          "fingerprint": "qq",
+          "publicKey": "mhIAHuZIEr2NpdGGSeOxar7VRSgEfVoNwb_G8Y0073E",
+          "shortId": "3b84fc70657725af",
+          "spiderX": ""
+        }
+      }
+    },
+    {
+      "tag": "proxy-4",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -243,7 +307,35 @@
       }
     },
     {
-      "tag": "proxy-3",
+      "tag": "proxy-5",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "nl-2a972c8052.shamanapp.online",
+            "port": 33736,
+            "users": [
+              {
+                "id": "1281acca-f21d-475c-bf04-eccbee7f8df2",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/vmess-ws",
+          "headers": {
+            "Host": "nl-2a972c8052.shamanapp.online"
+          }
+        }
+      }
+    },
+    {
+      "tag": "proxy-6",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -273,7 +365,7 @@
       }
     },
     {
-      "tag": "proxy-4",
+      "tag": "proxy-7",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -303,7 +395,7 @@
       }
     },
     {
-      "tag": "proxy-5",
+      "tag": "proxy-8",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -335,7 +427,7 @@
       }
     },
     {
-      "tag": "proxy-6",
+      "tag": "proxy-9",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -367,7 +459,7 @@
       }
     },
     {
-      "tag": "proxy-7",
+      "tag": "proxy-10",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -399,7 +491,7 @@
       }
     },
     {
-      "tag": "proxy-8",
+      "tag": "proxy-11",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -431,7 +523,7 @@
       }
     },
     {
-      "tag": "proxy-9",
+      "tag": "proxy-12",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -463,7 +555,7 @@
       }
     },
     {
-      "tag": "proxy-10",
+      "tag": "proxy-13",
       "protocol": "vless",
       "settings": {
         "vnext": [
