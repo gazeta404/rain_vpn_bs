@@ -220,66 +220,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "tickets.betust.net",
-            "port": 443,
-            "users": [
-              {
-                "id": "3b1fa839-2cb9-4511-9711-08800450aea3",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "tickets.betust.net",
-          "fingerprint": "firefox",
-          "publicKey": "TRaUsnzFf-AhWUuW4RQUQOBYTdM-qJdLDTTkzQNkcRw",
-          "shortId": "f70764f8",
-          "spiderX": ""
-        }
-      }
-    },
-    {
-      "tag": "proxy-3",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "snow.betust.net",
-            "port": 443,
-            "users": [
-              {
-                "id": "3b1fa839-2cb9-4511-9711-08800450aea3",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "api37.betust.net",
-          "fingerprint": "firefox",
-          "publicKey": "92lzqaBZnD5IP_subNDLotGMBs4u7STDMhqoBz1OADE",
-          "shortId": "b7a5c406",
-          "spiderX": ""
-        }
-      }
-    },
-    {
-      "tag": "proxy-4",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "game.betust.net",
             "port": 443,
             "users": [
@@ -305,12 +245,12 @@
       }
     },
     {
-      "tag": "proxy-5",
+      "tag": "proxy-3",
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "match.betust.net",
+            "address": "servise.betust.net",
             "port": 443,
             "users": [
               {
@@ -326,16 +266,16 @@
         "network": "tcp",
         "security": "reality",
         "realitySettings": {
-          "serverName": "apiv12nd.goonars.com",
+          "serverName": "servise.betust.net",
           "fingerprint": "firefox",
-          "publicKey": "OINuDFEDTdmtFR8QRxAZfQIMPA-wJxfGN1LjB3TFUHo",
-          "shortId": "535a3304",
+          "publicKey": "8HYqDHdQ1IuLPhAOENT70_j0prAi1PNkwlT6venYAEM",
+          "shortId": "a78da1f7",
           "spiderX": ""
         }
       }
     },
     {
-      "tag": "proxy-6",
+      "tag": "proxy-4",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -365,12 +305,12 @@
       }
     },
     {
-      "tag": "proxy-7",
+      "tag": "proxy-5",
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "app.betust.net",
+            "address": "snow.betust.net",
             "port": 443,
             "users": [
               {
@@ -386,16 +326,46 @@
         "network": "tcp",
         "security": "reality",
         "realitySettings": {
-          "serverName": "app.betust.net",
+          "serverName": "api37.betust.net",
           "fingerprint": "firefox",
-          "publicKey": "xNzdfy4hPv-IgM_MSn64FNQdb-UPu78pmM-GBE1HhSo",
-          "shortId": "ef5d4ad5",
+          "publicKey": "92lzqaBZnD5IP_subNDLotGMBs4u7STDMhqoBz1OADE",
+          "shortId": "b7a5c406",
           "spiderX": ""
         }
       }
     },
     {
-      "tag": "proxy-8",
+      "tag": "proxy-6",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "match.betust.net",
+            "port": 443,
+            "users": [
+              {
+                "id": "3b1fa839-2cb9-4511-9711-08800450aea3",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "apiv12nd.goonars.com",
+          "fingerprint": "firefox",
+          "publicKey": "OINuDFEDTdmtFR8QRxAZfQIMPA-wJxfGN1LjB3TFUHo",
+          "shortId": "535a3304",
+          "spiderX": ""
+        }
+      }
+    },
+    {
+      "tag": "proxy-7",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -420,6 +390,36 @@
           "fingerprint": "firefox",
           "publicKey": "zZjrHRzULoXKVccVdPqtrtXLEUPJXwqdE1138vu5x3w",
           "shortId": "3e137406",
+          "spiderX": ""
+        }
+      }
+    },
+    {
+      "tag": "proxy-8",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "tickets.betust.net",
+            "port": 443,
+            "users": [
+              {
+                "id": "3b1fa839-2cb9-4511-9711-08800450aea3",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "tickets.betust.net",
+          "fingerprint": "firefox",
+          "publicKey": "TRaUsnzFf-AhWUuW4RQUQOBYTdM-qJdLDTTkzQNkcRw",
+          "shortId": "f70764f8",
           "spiderX": ""
         }
       }
@@ -460,6 +460,66 @@
       "settings": {
         "vnext": [
           {
+            "address": "app.betust.net",
+            "port": 443,
+            "users": [
+              {
+                "id": "3b1fa839-2cb9-4511-9711-08800450aea3",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "app.betust.net",
+          "fingerprint": "firefox",
+          "publicKey": "xNzdfy4hPv-IgM_MSn64FNQdb-UPu78pmM-GBE1HhSo",
+          "shortId": "ef5d4ad5",
+          "spiderX": ""
+        }
+      }
+    },
+    {
+      "tag": "proxy-11",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "subscribe.betust.net",
+            "port": 443,
+            "users": [
+              {
+                "id": "3b1fa839-2cb9-4511-9711-08800450aea3",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "subscribe.betust.net",
+          "fingerprint": "firefox",
+          "publicKey": "6qbnUXper_wImNs0YVUh93oCcnAojWAnLBRW7hxvslw",
+          "shortId": "9a264653",
+          "spiderX": ""
+        }
+      }
+    },
+    {
+      "tag": "proxy-12",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "31.59.210.37",
             "port": 443,
             "users": [
@@ -487,7 +547,7 @@
       }
     },
     {
-      "tag": "proxy-11",
+      "tag": "proxy-13",
       "protocol": "vless",
       "settings": {
         "vnext": [
