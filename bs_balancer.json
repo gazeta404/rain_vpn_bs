@@ -188,6 +188,35 @@
       "settings": {
         "vnext": [
           {
+            "address": "de15.h1cloud.net",
+            "port": 25362,
+            "users": [
+              {
+                "id": "36fb6650-8a50-42b5-9f66-06538806f32c",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.chip.de",
+          "fingerprint": "firefox",
+          "publicKey": "hFee7zTreqlv_wccK_8zxN5v23hj9u-DshByvGf-KAA",
+          "shortId": "23732d14a527990d",
+          "spiderX": ""
+        }
+      }
+    },
+    {
+      "tag": "proxy-2",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "match.betust.net",
             "port": 443,
             "users": [
@@ -213,7 +242,7 @@
       }
     },
     {
-      "tag": "proxy-2",
+      "tag": "proxy-3",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -245,7 +274,7 @@
       }
     },
     {
-      "tag": "proxy-3",
+      "tag": "proxy-4",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -275,7 +304,7 @@
       }
     },
     {
-      "tag": "proxy-4",
+      "tag": "proxy-5",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -305,103 +334,7 @@
       }
     },
     {
-      "tag": "proxy-5",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "de15.h1cloud.net",
-            "port": 25362,
-            "users": [
-              {
-                "id": "36fb6650-8a50-42b5-9f66-06538806f32c",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.chip.de",
-          "fingerprint": "firefox",
-          "publicKey": "hFee7zTreqlv_wccK_8zxN5v23hj9u-DshByvGf-KAA",
-          "shortId": "23732d14a527990d",
-          "spiderX": ""
-        }
-      }
-    },
-    {
       "tag": "proxy-6",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "88.151.114.24",
-            "port": 443,
-            "users": [
-              {
-                "id": "2c5e1028-528f-4017-8832-addcb6797ddf",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/ws-hidden",
-          "headers": {
-            "Host": "ru.dostupnety.website"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "ru.dostupnety.website",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "proxy-7",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "46.243.142.104",
-            "port": 443,
-            "users": [
-              {
-                "id": "9ba53795-4356-40ab-8067-76ec2ae2a3d8",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/media/stream/qUWu2oaFgxAw",
-          "headers": {
-            "Host": "santehdv.site"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "santehdv.site",
-          "allowInsecure": false,
-          "alpn": [
-            "http/1.1"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "proxy-8",
       "protocol": "vless",
       "settings": {
         "vnext": [
