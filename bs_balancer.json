@@ -1,25 +1,6 @@
 {
   "dns": {
     "servers": [
-      {
-        "port": 53,
-        "address": "77.88.8.8",
-        "domains": [
-          "regexp:.*\\.ru$",
-          "regexp:.*\\.su$",
-          "regexp:.*\\.рф$",
-          "regexp:.*\\.xn--p1ai$",
-          "domain:vk.com",
-          "domain:userapi.com",
-          "domain:mycdn.me",
-          "domain:my.com",
-          "domain:mradx.net",
-          "domain:yandex.net",
-          "domain:yastatic.net",
-          "domain:yandexcloud.net"
-        ],
-        "skipFallback": true
-      },
       "https://1.1.1.1/dns-query",
       "1.1.1.1"
     ],
@@ -35,83 +16,6 @@
           "bittorrent"
         ],
         "outboundTag": "block"
-      },
-      {
-        "type": "field",
-        "ruleTag": "direct-push",
-        "outboundTag": "direct",
-        "domain": [
-          "domain:mtalk.google.com",
-          "domain:push.apple.com",
-          "domain:api.push.apple.com",
-          "domain:push-apple.com.akadns.net"
-        ]
-      },
-      {
-        "type": "field",
-        "ruleTag": "direct-ru-domains",
-        "outboundTag": "direct",
-        "domain": [
-          "regexp:.*\\.ru$",
-          "regexp:.*\\.su$",
-          "regexp:.*\\.рф$",
-          "regexp:.*\\.xn--p1ai$",
-          "yandex.cloud",
-          "domain:vk.com",
-          "domain:vk.me",
-          "domain:aliusvpn.ru",
-          "domain:vk.cc",
-          "domain:vk.link",
-          "domain:vkuser.net",
-          "domain:vkuseraudio.net",
-          "domain:vkuservideo.net",
-          "domain:vk-cdn.net",
-          "domain:vk-cdn.me",
-          "domain:vk-apps.com",
-          "domain:userapi.com",
-          "domain:my.com",
-          "domain:capi.my.com",
-          "domain:mycdn.me",
-          "domain:mradx.net",
-          "domain:mytarget.com",
-          "domain:mytracker.com",
-          "domain:mytrackerapi.com",
-          "domain:icq.com",
-          "domain:icq.net",
-          "domain:icq.im",
-          "domain:myicq.com",
-          "domain:tamtam.chat",
-          "domain:yandex.com",
-          "domain:yandex.net",
-          "domain:yandex.by",
-          "domain:yandex.kz",
-          "domain:ya.cc",
-          "domain:yadi.sk",
-          "domain:yastatic.net",
-          "domain:yandexcloud.net",
-          "domain:yandexadexchange.net",
-          "domain:ozon.st",
-          "domain:ozoncloud.net",
-          "domain:ozonusercontent.com",
-          "domain:wbstatic.net",
-          "domain:megamarket.tech",
-          "domain:2gis.com",
-          "domain:cian.com",
-          "domain:interfax.com",
-          "domain:gett.com",
-          "domain:maps.me",
-          "domain:premier.one",
-          "domain:okko.tv",
-          "domain:more.tv",
-          "domain:megogo.net",
-          "domain:avito.st",
-          "domain:yappy.media",
-          "domain:mediascope.net",
-          "domain:appsflyersdk.com",
-          "domain:alfa.me",
-          "domain:tbank-online.com",
-          "domain:toloka.ai"
-        ]
       },
       {
         "type": "field",
@@ -151,15 +55,6 @@
       "settings": {
         "udp": true,
         "auth": "noauth"
-      },
-      "sniffing": {
-        "enabled": true,
-        "routeOnly": false,
-        "destOverride": [
-          "http",
-          "tls",
-          "quic"
-        ]
       }
     },
     {
@@ -169,15 +64,6 @@
       "protocol": "http",
       "settings": {
         "allowTransparent": false
-      },
-      "sniffing": {
-        "enabled": true,
-        "routeOnly": false,
-        "destOverride": [
-          "http",
-          "tls",
-          "quic"
-        ]
       }
     }
   ],
@@ -188,11 +74,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "45.12.75.242",
-            "port": 26424,
+            "address": "api.mediaklenov.cc",
+            "port": 443,
             "users": [
               {
-                "id": "633f424e-2b11-48da-a6b3-a849dd71456f",
+                "id": "abd5755a-8b77-4ed4-afbd-f2ccbc08e6f5",
                 "encryption": "none"
               }
             ]
@@ -200,14 +86,17 @@
         ]
       },
       "streamSettings": {
-        "network": "raw",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "ya.ru",
-          "fingerprint": "chrome",
-          "publicKey": "l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0",
-          "shortId": "23103e1e",
-          "spiderX": ""
+        "network": "grpc",
+        "grpcSettings": {
+          "serviceName": "3e99d50d5740985d"
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "api.mediaklenov.cc",
+          "allowInsecure": false,
+          "alpn": [
+            "h2"
+          ]
         }
       }
     },
@@ -241,6 +130,122 @@
       }
     },
     {
+      "tag": "proxy-3",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "45.12.75.242",
+            "port": 26424,
+            "users": [
+              {
+                "id": "633f424e-2b11-48da-a6b3-a849dd71456f",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "ya.ru",
+          "fingerprint": "chrome",
+          "publicKey": "l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0",
+          "shortId": "23103e1e",
+          "spiderX": ""
+        }
+      }
+    },
+    {
+      "tag": "proxy-4",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "pl1.h1cloud.net",
+            "port": 27591,
+            "users": [
+              {
+                "id": "056405e8-de9f-4d0d-8145-956f13cc34da",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.samsung.com",
+          "fingerprint": "qq",
+          "publicKey": "LY0H47MWx87_L_JBzxFAuTzKZB53U7MrZQK8-dNnMxM",
+          "shortId": "6c5c7900406a1ae7",
+          "spiderX": ""
+        }
+      }
+    },
+    {
+      "tag": "proxy-5",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "pl1.h1cloud.net",
+            "port": 27591,
+            "users": [
+              {
+                "id": "056405e8-de9f-4d0d-8145-956f13cc34da",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.samsung.com",
+          "fingerprint": "edge",
+          "publicKey": "LY0H47MWx87_L_JBzxFAuTzKZB53U7MrZQK8-dNnMxM",
+          "shortId": "6c5c7900406a1ae7",
+          "spiderX": ""
+        }
+      }
+    },
+    {
+      "tag": "proxy-6",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "pl1.h1cloud.net",
+            "port": 27591,
+            "users": [
+              {
+                "id": "056405e8-de9f-4d0d-8145-956f13cc34da",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.samsung.com",
+          "fingerprint": "ios",
+          "publicKey": "LY0H47MWx87_L_JBzxFAuTzKZB53U7MrZQK8-dNnMxM",
+          "shortId": "6c5c7900406a1ae7",
+          "spiderX": ""
+        }
+      }
+    },
+    {
       "tag": "direct",
       "protocol": "freedom"
     },
@@ -254,7 +259,7 @@
       "timeout": "3s",
       "interval": "1m",
       "sampling": 1,
-      "destination": "http://www.gstatic.com/generate_204",
+      "destination": "https://www.gstatic.com/generate_204",
       "connectivity": ""
     },
     "subjectSelector": [
