@@ -74,11 +74,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "api.mediaklenov.cc",
-            "port": 443,
+            "address": "84.23.52.120",
+            "port": 28450,
             "users": [
               {
-                "id": "abd5755a-8b77-4ed4-afbd-f2ccbc08e6f5",
+                "id": "4d8132cb-f4e3-428c-91ff-2b4f7a868551",
                 "encryption": "none"
               }
             ]
@@ -86,16 +86,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "serviceName": "3e99d50d5740985d"
+        "network": "ws",
+        "wsSettings": {
+          "path": "/lovelive",
+          "headers": {
+            "Host": "pl.sparxiecn.com"
+          }
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "api.mediaklenov.cc",
+          "serverName": "pl.sparxiecn.com",
           "allowInsecure": false,
           "alpn": [
-            "h2"
+            "h2",
+            "http/1.1"
           ]
         }
       }
@@ -106,11 +110,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "de15.h1cloud.net",
-            "port": 25362,
+            "address": "84.23.52.120",
+            "port": 28452,
             "users": [
               {
-                "id": "36fb6650-8a50-42b5-9f66-06538806f32c",
+                "id": "4d8132cb-f4e3-428c-91ff-2b4f7a868551",
                 "encryption": "none"
               }
             ]
@@ -118,19 +122,62 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.chip.de",
-          "fingerprint": "firefox",
-          "publicKey": "hFee7zTreqlv_wccK_8zxN5v23hj9u-DshByvGf-KAA",
-          "shortId": "23732d14a527990d",
-          "spiderX": ""
+        "network": "ws",
+        "wsSettings": {
+          "path": "/lovelive",
+          "headers": {
+            "Host": "pl.sparxiecn.com"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "pl.sparxiecn.com",
+          "allowInsecure": false,
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
         }
       }
     },
     {
       "tag": "proxy-3",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "84.23.52.120",
+            "port": 28447,
+            "users": [
+              {
+                "id": "4d8132cb-f4e3-428c-91ff-2b4f7a868551",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/lovelive",
+          "headers": {
+            "Host": "pl.sparxiecn.com"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "pl.sparxiecn.com",
+          "allowInsecure": false,
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "proxy-4",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -159,7 +206,68 @@
       }
     },
     {
-      "tag": "proxy-4",
+      "tag": "proxy-5",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "api.mediaklenov.cc",
+            "port": 443,
+            "users": [
+              {
+                "id": "abd5755a-8b77-4ed4-afbd-f2ccbc08e6f5",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "grpcSettings": {
+          "serviceName": "3e99d50d5740985d"
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "api.mediaklenov.cc",
+          "allowInsecure": false,
+          "alpn": [
+            "h2"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "proxy-6",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "de15.h1cloud.net",
+            "port": 25362,
+            "users": [
+              {
+                "id": "36fb6650-8a50-42b5-9f66-06538806f32c",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.chip.de",
+          "fingerprint": "firefox",
+          "publicKey": "hFee7zTreqlv_wccK_8zxN5v23hj9u-DshByvGf-KAA",
+          "shortId": "23732d14a527990d",
+          "spiderX": ""
+        }
+      }
+    },
+    {
+      "tag": "proxy-7",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -188,7 +296,7 @@
       }
     },
     {
-      "tag": "proxy-5",
+      "tag": "proxy-8",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -217,7 +325,7 @@
       }
     },
     {
-      "tag": "proxy-6",
+      "tag": "proxy-9",
       "protocol": "vless",
       "settings": {
         "vnext": [
